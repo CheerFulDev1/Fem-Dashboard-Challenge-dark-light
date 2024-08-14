@@ -2,12 +2,14 @@
 
 .toggle{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr rem(60) 1fr;
     grid-template-rows: repeat(2, 1fr);
     border: none;
     gap: rem(12);
 
     label{
+        font-size: rem(14);
+        
         &[for='dark']{
             grid-column: 1/2;
             justify-self: end;
@@ -61,5 +63,11 @@
     #light:checked ~ .toggle__button{
         left: calc(100% - 21px);
         right: 3px;
+    }
+
+    #system:checked ~ .toggle__button{
+        left: 50%;
+        right: auto;
+        transform: translate(-50%);
     }
 }
