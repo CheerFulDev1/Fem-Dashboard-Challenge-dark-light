@@ -19,7 +19,17 @@
     text-align: center;
     padding: rem(25);
     border-radius: rem(5);
+    cursor: pointer;
 
+    &:hover{
+        background: var(--dark-hover);
+    }
+
+
+    &__subtittle{
+        font-size: rem(14);
+        font-weight: 700;
+    }
 
     &__platform{
         display: flex;
@@ -72,7 +82,8 @@
             font-size: rem(56);    
         }
         &--small{
-
+            font-size: rem(32);
+            margin: 0;
         }
     }
 
