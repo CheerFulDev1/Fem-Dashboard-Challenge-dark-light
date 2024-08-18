@@ -14,15 +14,15 @@
 
 .card{
 
-    background: var(--dark-card);
-    color: var(--dark-text1);
+    background: var(--card-bg);
+    color: var(--text-color2);
     text-align: center;
     padding: rem(25);
     border-radius: rem(5);
     cursor: pointer;
 
     &:hover{
-        background: var(--dark-hover);
+        background: var(--hover-color);
     }
 
 
@@ -72,7 +72,7 @@
     }
 
     &__count{
-        color: var(--dark-text2);
+        color: var(--text-color);
         font-weight: 700;
         letter-spacing: rem(-2);
         line-height: 1;
